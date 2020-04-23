@@ -1,0 +1,27 @@
+plugins:
+  - cleanupAttrs: true
+  - removeDoctype: true
+  - removeXMLProcInst: true
+  - removeComments: true
+  - removeMetadata: true
+  - removeTitle: true
+  - removeDesc: true
+  - removeUselessDefs: true
+  - removeXMLNS: true
+  - removeEditorsNSData: true
+  - removeEmptyAttrs: true
+  - removeHiddenElems: true
+  - removeEmptyText: true
+  - removeEmptyContainers: true
+  - removeViewBox: false
+  - removeUnknownsAndDefaults: true
+  - removeNonInheritableGroupAttrs: true
+  - removeUselessStrokeAndFill: true
+  - removeUnusedNS: true
+  - removeDimensions: true
+  - removeAttrs:
+      attrs:
+        - 'path:fill'
+  - addAttributesToSVGElement:
+      attributes:
+        - fill: currentColor

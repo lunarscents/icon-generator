@@ -1,0 +1,30 @@
+{
+  "name": "@jasmine/react-icons",
+  "version": "1.0.0",
+  "description": "React Icon Components",
+  "main": "dist/index.js",
+  "repository": "https://git@github.com:jayunW/icon-web.git",
+  "license": "UNLICENSED",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "generate": "svgr --config-file=.svgrrc.js --template=templates/svgr-template.js --out-dir src/components/ ../svg-icons/svg --ext tsx && yarn run prettier",
+    "prettier": "prettier --config ../../.prettierrc --write src/**/*.tsx",
+    "build": "tsc",
+    "prepublish": "yarn generate & yarn build"
+  },
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@types/react": "^16.9.33",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.3.1",
+    "@types/react": "^16.9.33"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "shape": {
+        "transform": [ "svgo" ],
+        "spacing": {
+            "padding": 1,
+            "box": "padding"
+        },
+        "dimension": {
+            "maxWidth": 1140
+        }
+    },
+    "mode": {
+        "css": {
+            "bust": false,
+            "prefix": ".icon-%s",
+            "dimensions": true,
+            "sprite": "../dist/icons/icon-sprite.svg",
+            "render": {
+                "html": {
+                    "template": "./templates/svg-template.hbs",
+                    "dest": "../dist/index"
+                }
+            }
+        }
+    },
+    "variables": {
+        "spriteUrl": "./icons/icon-sprite.svg"
+    }
+}
